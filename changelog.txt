@@ -1,0 +1,75 @@
+v0.8.9 (2026-August-14)
+  * remove secondary ICY stream connection that was disconnecting playback
+  * keep API-based now-playing updates without opening a second listen session
+
+v0.8.8 (2026-August-14)
+  * read live ICY StreamTitle so metadata matches what you hear
+  * update the playing ListItem in-place for skins/Artist Slideshow
+  * keep API artwork lookup as a complement to ICY titles
+
+v0.8.7 (2026-August-14)
+  * use currently_playing API for faster track updates
+  * poll more often near the end of each song
+
+v0.8.6 (2026-August-14)
+  * show live artist/title from AudioAddict track history while playing
+  * update now-playing metadata (and art) as tracks change
+  * request ICY metadata on stream connections when available
+
+v0.8.5 (2026-August-01)
+  * clear music playlist before playback so Kodi does not auto-advance stations
+  * use inputstream.ffmpegdirect for live MP3 streams when available (Shield fix)
+  * validate stream URLs against the actual endpoint instead of the server hostname
+
+v0.8.4 (2026-August-01)
+  * remove interactive playback and skip support; restore original live stream behavior
+
+v0.8.3 (2026-August-01)
+  * tag streams as music/internet radio instead of video (Kodi Omega fix)
+  * use InfoTagMusic on Kodi 20+ with setInfo fallback for older releases
+  * switch API, referer, and image URLs to HTTPS
+  * improve streaming server detection with HTTPS and timeout fallback
+
+v0.6.1 (2018-July-11)
+  * fix Kodi 18 incompatibility
+
+v0.6.0 (2018-February-28)
+  - drop public stream support
+  * improve supported channel detection
+  * improve error handling
+  * simplify settings
+  + bypass network list if only one network is activated
+
+v0.5.1 (2017-November-08)
+  * better detection for disabled channels
+
+v0.5.0 (2017-August-10)
+  + add channel sorting by name
+  + add channel sorting by creation date
+  * fix issue with non-working channels (playlist verification)
+
+v0.4.1 (2017-July-30)
+  * show channel art if channel is started via Yatse
+  * cleanup some API issues
+
+v0.4.0 (2017-July-15)
+  + add optional authentication method with ListenKey
+  * cache authentication data
+  + automatically update authentication data if needed
+  * update welcome text
+  * send ListenKey via HTTPS to AudioAddict API
+
+v0.3.0 (2017-June-28)
+  + add welcome text for new user describing
+    how to create an account
+
+v0.2.0 (2017-June-25)
+  * description updated
+  * change logo design to final version
+    thanks to Rantanplan-1 who made it
+
+v0.1.1 (2017-June-23)
+  * code simplification, no functional changes
+
+v0.1.0 (2017-June-22)
+  * inital version

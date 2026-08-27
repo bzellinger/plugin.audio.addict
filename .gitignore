@@ -1,0 +1,24 @@
+# Build artifacts
+*.zip
+*.pyc
+__pycache__/
+*.pyo
+
+# Local / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Secrets and local Kodi userdata copies — never commit Listen Keys
+.env
+.env.*
+**/addon_data/
+**/settings.xml.bak
+sessions.json
+nowplaying.json
+
+# Local helper copies
+*.log
